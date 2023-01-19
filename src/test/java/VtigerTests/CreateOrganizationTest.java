@@ -26,14 +26,14 @@ public class CreateOrganizationTest {
 		long time = Long.parseLong(property.fetchProperty("timeouts"));
 		WebDriver driver = web.openApplication(property.fetchProperty("browser"), property.fetchProperty("url"), time);
 		
-//		Random random = new Random();
-//		int randomNum = random.nextInt(100);
-//		
-//		WebDriverManager.chromedriver().setup();
-//		WebDriver driver = new ChromeDriver();
-//		driver.manage().window().maximize();
-//		driver.get("http://localhost:8888/");
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//		Random random = new Random();
+		//		int randomNum = random.nextInt(100);
+		//		
+		//		WebDriverManager.chromedriver().setup();
+		//		WebDriver driver = new ChromeDriver();
+		//		driver.manage().window().maximize();
+		//		driver.get("http://localhost:8888/");
+		//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		String title = driver.findElement(By.xpath("//a[@href='http://www.vtiger.com']")).getText();
 		
